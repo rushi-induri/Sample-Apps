@@ -1,5 +1,6 @@
 package com.induri.rushi.listviewadapter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,6 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
+    Intent intent;
     ListView l;
     String[] days = {"Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday","Sunday"};
     @Override
@@ -55,5 +57,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         TextView temp = (TextView) view;
         Toast.makeText(this,temp.getText(),Toast.LENGTH_SHORT).show();
+        intent = new Intent(this,NewActivity.class);
+       // intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra("Sent",temp.getText());
+        startActivity(intent);
     }
 }

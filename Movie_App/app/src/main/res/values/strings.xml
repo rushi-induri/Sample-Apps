@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Top 10 Movies</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="movie_titles">
+        <item>The Shawshank Redemption</item>
+        <item>The Godfather</item>
+        <item>The Godfather: Part 2</item>
+        <item>Dark Knight</item>
+        <item>Schindelr\'s List</item>
+        <item>Pulp Fiction</item>
+        <item>12 Angry Men</item>
+        <item>Lord of the Rings: Part3</item>
+        <item>The Good,the bad and the ugly</item>
+        <item>Fight Club</item>
+    </string-array>
+    <string-array name="movie_ratings">
+        <item>9.2/10</item>
+        <item>9.2/10</item>
+        <item>9.0/10</item>
+        <item>8.9/10</item>
+        <item>8.9/10</item>
+        <item>8.9/10</item>
+        <item>8.9/10</item>
+        <item>8.9/10</item>
+        <item>8.9/10</item>
+        <item>8.8/10</item>
+    </string-array>
+</resources>
